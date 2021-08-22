@@ -129,8 +129,13 @@ a:link, a:visited {
     align-items: flex-start;
   }
   #header__main-nav .header__main-nav--links li {
+    opacity: 0;
     margin-bottom: 4vh;
     margin-left: 6vw;
+    transition: all 0.4s ease-in-out 0.2s;
+  }
+  #header__main-nav .header__main-nav--links .fade {
+    opacity: 1;
   }
 }
 #header__main-nav {

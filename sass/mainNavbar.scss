@@ -61,8 +61,17 @@
         align-items: flex-start;
 
         li {
+          opacity: 0;
           margin-bottom: 4vh;
           margin-left: 6vw;
+
+          //&:nth-child(n) {
+            transition: all 0.4s ease-in-out 0.2s;
+          //}
+        }
+
+        .fade {
+          opacity: 1;
         }
       }
     }
