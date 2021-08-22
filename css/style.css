@@ -1,0 +1,42 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0f9b8e;
+  color: #fff;
+  font-family: "Bebas Neue", "Klee One", "Open Sans", "sans-serif", cursive;
+  display: flex;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+::selection {
+  color: #fcc006;
+  background-color: #ff7052;
+}
+
+.side-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: orangered;
+  border: 4px solid black;
+}
+.side-nav__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0f9b8e;
+  color: #fff;
+  font-family: 'Bebas Neue', 'Klee One', 'Open Sans', 'sans-serif', cursive;
+  display: flex;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+::selection {
+  color: #fcc006;
+  background-color: #ff7052;
+}
+
