@@ -1,0 +1,74 @@
+#showcase {
+  height: 100vh;
+  background-image: url(../img/full-bg-03.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .showcase__content {
+    background-color: $secondary-color-m;
+    padding: calc(1rem + 3vw);
+    height: calc(5rem + 20vmax);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 2ms cubic-bezier(0.66,-0.33,-.66,.88);
+    animation: hero 3s;
+
+    &--title {
+      font-size: calc(2rem + 3vw);
+    }
+
+    &--para {
+      font-family: "Bebas Neue", cursive;
+      font-size: calc(1.5rem + 1vw);
+    }
+
+    &--link:visited,
+    &--link:link {
+      padding: 1rem 0;
+      transition: all 0.4s ease-in-out;
+      width: 9rem;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    &--link:visited::after,
+    &--link:link::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $primary-color;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: all 0.45s;
+    }
+
+    &--link:hover::after,
+    &--link:active::after {
+      transform: scaleX(1);
+      z-index: -1;
+    }
+  }
+}
+
+@keyframes hero {
+  0% {
+    transform: translateX(120rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

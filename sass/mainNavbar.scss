@@ -34,7 +34,7 @@
       .header__main-nav--hamburger {
         width: 5rem;
         height: 5rem;
-        position:fixed;
+        position: fixed;
         top: 2rem;
         right: 5rem;
         cursor: pointer;
@@ -64,10 +64,7 @@
           opacity: 0;
           margin-bottom: 4vh;
           margin-left: 6vw;
-
-          //&:nth-child(n) {
-            transition: all 0.4s ease-in-out 0.2s;
-          //}
+          transition: all 0.4s ease-in-out 0.2s;
         }
 
         .fade {
@@ -108,7 +105,7 @@
             background-color: white;
 
             transform: scaleX(0);
-            transition: all 0.6s cubic-bezier(1,0,0,1) ;
+            transition: all 0.6s cubic-bezier(1, 0, 0, 1);
           }
 
           &:link::before,
