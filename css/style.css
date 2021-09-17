@@ -345,4 +345,67 @@ a:link, a:visited {
   transform-origin: top;
 }
 
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6rem 2rem 2rem;
+  background-color: #03651a;
+}
+#services .service {
+  padding: 4rem;
+  margin: 0 2rem 4rem;
+  flex-basis: 40rem;
+  flex-grow: 1;
+  background-color: #e36601;
+  border-bottom: 0.2rem solid #e36601;
+  border-left: 0.2rem solid #e36601;
+  border-right: 0.2rem solid #e36601;
+  position: relative;
+  z-index: 1;
+}
+#services .service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #03651a;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#services .service:hover::after, #services .service:active::after {
+  transform: scaleY(1);
+  transition: all 0.4s ease-in-out;
+}
+#services .service i, #services .service .services--title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+#services .service .services--para {
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+@media screen and (max-width: 610px) {
+  #services .service {
+    padding: 6rem 3rem 2rem;
+  }
+  #services .service .service {
+    padding: calc(1rem + 2vw);
+    margin: 0 0 calc(1rem + 2vw);
+  }
+  #services .service .services--title {
+    font-size: calc(1rem + 2vw);
+  }
+  #services .service .services--para {
+    font-size: calc(0.8rem + 1.5vw);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
