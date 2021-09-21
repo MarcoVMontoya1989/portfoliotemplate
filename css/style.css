@@ -40,36 +40,12 @@ a:link, a:visited {
   font-size: 1.5rem;
 }
 
-@-webkit-keyframes ceroPercent {
+@keyframes skillPercentage {
   from {
     width: 0;
   }
   to {
-    width: 50%;
-  }
-}
-@-moz-keyframes ceroPercent {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
-@-o-keyframes ceroPercent {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
-@keyframes ceroPercent {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
+    width: 100%;
   }
 }
 .side-nav {
@@ -477,23 +453,93 @@ a:link, a:visited {
   width: 10rem;
   border-radius: 1rem 0 0 1rem;
 }
-#skills .skills__design--progress__1, #skills .skills__coding--progress__1 {
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  -o-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: ceroPercent;
-  -moz-animation-name: ceroPercent;
-  -o-animation-name: ceroPercent;
-  animation-name: ceroPercent;
-  -webkit-animation-direction: cubic-bezier(1, 0, 0, 1);
-  -moz-animation-direction: cubic-bezier(1, 0, 0, 1);
-  -o-animation-direction: cubic-bezier(1, 0, 0, 1);
-  animation-direction: cubic-bezier(1, 0, 0, 1);
+#skills .skills__design--progress__1 {
+  animation: webDesign 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes webDesign {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+#skills .skills__design--progress__2 {
+  animation: printDesign 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes printDesign {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+#skills .skills__design--progress__3 {
+  animation: logoDesign 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes logoDesign {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+#skills .skills__design--progress__4 {
+  animation: graphDesign 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes graphDesign {
+  from {
+    width: 0;
+  }
+  to {
+    width: 77%;
+  }
+}
+#skills .skills__coding--progress__1 {
+  animation: htmlCss 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes htmlCss {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+#skills .skills__coding--progress__2 {
+  animation: js 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 99%;
+  }
+}
+#skills .skills__coding--progress__3 {
+  animation: python 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes python {
+  from {
+    width: 0;
+  }
+  to {
+    width: 79%;
+  }
+}
+#skills .skills__coding--progress__4 {
+  animation: sql 7s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes sql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 57%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

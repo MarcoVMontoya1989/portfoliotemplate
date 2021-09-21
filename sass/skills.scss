@@ -40,10 +40,45 @@
           width: 10rem;
           border-radius: 1rem 0 0 1rem;
         }
+      }
+    }
 
+    &__design {
+      &--progress {
         &__1 {
-          //animation: skillsLevel 4s infinite cubic-bezier(1,0,0,1);
-          @include ceroPercent;
+          @include skillPercent(webDesign, 50);
+        }
+
+        &__2 {
+          @include skillPercent(printDesign, 90);
+        }
+
+        &__3 {
+          @include skillPercent(logoDesign, 49);
+        }
+
+        &__4 {
+          @include skillPercent(graphDesign, 77);
+        }
+      }
+    }
+
+    &__coding {
+      &--progress {
+        &__1 {
+          @include skillPercent(htmlCss, 90);
+        }
+
+        &__2 {
+          @include skillPercent(js, 99);
+        }
+
+        &__3 {
+          @include skillPercent(python, 79);
+        }
+
+        &__4 {
+          @include skillPercent(sql, 57);
         }
       }
     }
