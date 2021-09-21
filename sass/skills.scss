@@ -82,5 +82,21 @@
         }
       }
     }
+
+    @media screen and (max-width: 610px) {
+      .skills {
+        &__design, &__coding {
+
+          h4 {
+            font-size: calc(0.8rem + 1.5rem);
+          }
+
+          &--title {
+            font-size: calc(1.2rem + 1.5vw);
+
+          }
+        }
+      }
+    }
   }
 }

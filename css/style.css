@@ -40,6 +40,12 @@ a:link, a:visited {
   font-size: 1.5rem;
 }
 
+@media (min-width: 1510px) {
+  body {
+    width: 1510px;
+    margin: 0 auto;
+  }
+}
 @keyframes skillPercentage {
   from {
     width: 0;
@@ -539,6 +545,14 @@ a:link, a:visited {
   }
   to {
     width: 57%;
+  }
+}
+@media screen and (max-width: 610px) {
+  #skills .skills .skills__design h4, #skills .skills .skills__coding h4 {
+    font-size: calc(0.8rem + 1.5rem);
+  }
+  #skills .skills .skills__design--title, #skills .skills .skills__coding--title {
+    font-size: calc(1.2rem + 1.5vw);
   }
 }
 
