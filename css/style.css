@@ -407,5 +407,55 @@ a:link, a:visited {
     font-size: calc(0.8rem + 1.5vw);
   }
 }
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(1rem + 2vw);
+}
+#skills .skills__design, #skills .skills__coding {
+  padding: calc(1rem + 2vw);
+  text-transform: uppercase;
+  flex-basis: 40rem;
+  flex-grow: 1;
+}
+#skills .skills__design--title, #skills .skills__coding--title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#skills .skills__design h4, #skills .skills__coding h4 {
+  font-size: 2rem;
+  color: white;
+}
+#skills .skills__design--progress, #skills .skills__coding--progress {
+  position: relative;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  background-color: #03651a;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#skills .skills__design--progress span, #skills .skills__coding--progress span {
+  position: relative;
+  background-color: #e36601;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1rem 0 0 1rem;
+}
+#skills .skills__design--progress__1, #skills .skills__coding--progress__1 {
+  animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes skillsLevel {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
