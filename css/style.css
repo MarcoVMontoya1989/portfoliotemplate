@@ -556,4 +556,58 @@ a:link, a:visited {
   }
 }
 
+#testimonials {
+  padding: calc(1rem + 2vw);
+  background-color: #e36601;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#testimonials .testimonials__card {
+  padding: 2vw;
+  flex-basis: 40rem;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+#testimonials .testimonials__card--img {
+  height: 100%;
+  width: 100%;
+}
+#testimonials .testimonials__card--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+#testimonials .testimonials__card--content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 80%;
+  background-color: #0a4600;
+  transform: scaleY(1);
+  transition: transform 0.5s ease-in-out;
+}
+#testimonials .testimonials__card--content__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#testimonials .testimonials__card--content__para {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+}
+#testimonials .testimonials__card:hover, #testimonials .testimonials__card:active {
+  background-color: black;
+}
+#testimonials .testimonials__card:hover--content, #testimonials .testimonials__card:active--content {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+#testimonials .testimonials__card:hover--content img, #testimonials .testimonials__card:active--content img {
+  transform: scale(1.5);
+}
+
 /*# sourceMappingURL=style.css.map */
