@@ -1,0 +1,38 @@
+#contact {
+  height: 100vh;
+  background-image: url("../img/full-bg-03.jpg");
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media (min-width: 460px) {
+    background-position: 10% 5%;
+  }
+
+  .contact__ {
+    &form {
+      flex-basis: 40rem;
+
+      display: flex;
+      flex-direction: column;
+      background-color: $tertiary-color-m;
+
+      input, textarea {
+        color: white;
+        font-family: 'Bebas Neue', 'Klee One', 'Open Sans', 'sans-serif', cursive;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        padding: 2rem;
+        background: transparent;
+        border: none;
+        border-bottom: $secondary-color solid 0.1rem;
+      }
+
+      input[type="submit"] {
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
